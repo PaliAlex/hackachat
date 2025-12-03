@@ -36,3 +36,53 @@
     transform: rotate(360deg);
   }
 }
+@layer base {
+  /* Sora bold */
+  @font-face {
+    font-family: SoraBold;
+    src: url('./shared/assets/fonts/Sora/sora_bold.woff')
+    format('woff');
+    font-weight: 900;
+  }
+
+  /* Sora Regular */
+  @font-face {
+    font-family: Sora;
+    src: url('./shared/assets/fonts/Sora/sora_regular.woff2')
+    format('woff2'),
+    url('./shared/assets/fonts/Sora/sora_regular.woff')
+    format('woff');
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  /* Inter Regular */
+  @font-face {
+    font-family: Inter;
+    src: url('./shared/assets/fonts/Inter/inter_regular.woff2')
+    format('woff2'),
+    url('./shared/assets/fonts/Inter/inter_regular.woff')
+    format('woff');
+    font-weight: 400;
+  }
+
+  /* Inter Bold */
+  @font-face {
+    font-family: InterBold;
+    src: url('./shared/assets/fonts/Inter/Inter-bold.woff2')
+    format('woff2'),
+    url('./shared/assets/fonts/Inter/Inter-bold.woff')
+    format('woff');
+    font-weight: 700;
+  }
+}
+
+html,
+body,
+#root {
+  font-size: 16px;
+  color: #3a3c55;
+  font-family: Inter, sans-serif;
+  height: 100%;
+}
+
