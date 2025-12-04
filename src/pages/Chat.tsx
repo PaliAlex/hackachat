@@ -6,7 +6,6 @@ import { db } from "../firebase";
 import { collection, addDoc, onSnapshot } from "firebase/firestore";
 import {formatDate} from "../shared/helpers/formatDate";
 
-
 interface ChatProps {
     userId: string;
 }
@@ -37,8 +36,7 @@ export const Chat = ({ userId }: ChatProps) => {
             userId,
             createdAt: Math.floor(Date.now() / 1000)
         });
-        console.log(input, 'input')
-        setInput(input);
+        setInput('');
     };
 
     const scrollToBottom = () => {
@@ -73,7 +71,6 @@ export const Chat = ({ userId }: ChatProps) => {
 
     return (
         <>
-
             <div className="h-screen flex flex-col bg-[#FCFAF9]">
                 <Header/>
                 <div
