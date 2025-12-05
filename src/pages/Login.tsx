@@ -31,8 +31,6 @@ export const Login = ({setUserId}: LoginProps) => {
 
             const isUserExisted = list.find((it) => (it.name === username))
 
-            console.log(list, 'list')
-            console.log(isUserExisted, 'isUserExisted')
             if (!snapshot.empty && isUserExisted) {
                 isUserExisted.id && setUserId(isUserExisted.id);
 
